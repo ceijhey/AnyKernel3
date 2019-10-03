@@ -392,7 +392,16 @@ flash_dtbo() {
   cd $home;
   for i in dtbo dtbo.img; do
     if [ -f $i ]; then
-      dtbo=$i;
+      if [ "$fpsoverride" == true ]; then
+      	# use prebuilt 67hz specfic dtbo, thus override
+      	dtbo=dtbo67.img; 
+      	echo "DTBO selected and set to 67Hz"
+      	ui_print "  • Setting 67 Hz screen refresh rate";
+      else
+      	dtbo=$i;
+      	echo "Fallback to 60 HZ build";
+      	ui_print "  • Falling back to 60 Hz screen refresh rate";
+      fi;
       break;
     fi;
   done;
