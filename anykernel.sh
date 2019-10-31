@@ -27,10 +27,17 @@ customdd="bs=1048576"
 
 # Check if we have appended FPS in kernel zip name, set accordingly
 case "$ZIPFILE" in
-  *"67hz"*|*67hz*)
+  *"67hz"*|*67hz*|*"67Hz"|*67Hz*)
     fpsoverride=true;
+    fpsrate=67;
     echo "67Hz build detected"
-    ui_print "  • 67 Hz detected in Zip File"
+    ui_print "  • 67 Hz detected in ZIP File"
+    ;;
+  *"70hz"*|*70hz*|*"70Hz"*|*70Hz*)
+    fpsoverride=true;
+    fpsrate=70;
+    echo "70Hz build detected";
+    ui_print"  • 70 Hz detected in ZIP file"
     ;;
   *)
     echo " 60 Hz Normal build"
