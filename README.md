@@ -16,11 +16,11 @@ do.devicecheck=1
 do.modules=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-supported.versions=6.0 - 7.1.2
-supported.patchlevels=2019-07 -
+device.name1=aosp_jason
+device.name2=jason
+device.name3=Minote3
+supported.versions=6.0 - 10
+supported.patchlevels=
 
 block=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
 is_slot_device=0;

@@ -4,12 +4,12 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
+kernel.string=Grafeno by welton phelipe @ xda-developers
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=violet
+device.name1=jason
 device.name2=
 device.name3=
 device.name4=
